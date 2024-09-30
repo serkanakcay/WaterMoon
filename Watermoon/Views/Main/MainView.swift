@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+     var viewModel = MainViewViewModel()
     var body: some View {
-        TabbarView()
+        
+       TabbarView()
+        
     }
 }
 

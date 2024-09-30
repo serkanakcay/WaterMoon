@@ -9,14 +9,23 @@
 /* Begin PBXBuildFile section */
 		C90765482C511BAF00DCB324 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90765472C511BAF00DCB324 /* RegisterView.swift */; };
 		C92215782C4FD63A00EFB489 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92215772C4FD63A00EFB489 /* LoginView.swift */; };
+		C924C1462CA5800500F861A9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C924C1452CA5800500F861A9 /* FirebaseAuth */; };
+		C924C1482CA5800500F861A9 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C924C1472CA5800500F861A9 /* FirebaseDatabaseSwift */; };
+		C924C14A2CA5800500F861A9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C924C1492CA5800500F861A9 /* FirebaseFirestore */; };
+		C924C14C2CA580A700F861A9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C924C14B2CA580A700F861A9 /* FirebaseAnalytics */; };
+		C924C14E2CA584DE00F861A9 /* TargetViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C14D2CA584DE00F861A9 /* TargetViewViewModel.swift */; };
+		C924C1502CA5850E00F861A9 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C14F2CA5850E00F861A9 /* ProfileViewViewModel.swift */; };
 		C955659A2C2EFCCB00CCCCBA /* WatermoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95565992C2EFCCB00CCCCBA /* WatermoonApp.swift */; };
 		C955659E2C2EFCCD00CCCCBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C955659D2C2EFCCD00CCCCBA /* Assets.xcassets */; };
-		C95565A12C2EFCCD00CCCCBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95565A02C2EFCCD00CCCCBA /* Preview Assets.xcassets */; };
 		C95565B22C2F052F00CCCCBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95565B12C2F052F00CCCCBA /* TabbarView.swift */; };
 		C95565B42C2F05CC00CCCCBA /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95565B32C2F05CC00CCCCBA /* WaterView.swift */; };
 		C95565B62C2F07C800CCCCBA /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95565B52C2F07C800CCCCBA /* StatsView.swift */; };
 		C95565B82C3024FB00CCCCBA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95565B72C3024FB00CCCCBA /* SettingView.swift */; };
+		C99DD2BF2C8F02CF00D44A79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C99DD2BE2C8F02CF00D44A79 /* GoogleService-Info.plist */; };
 		C9CD603E2C4D9B830015AF97 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD603D2C4D9B830015AF97 /* MainView.swift */; };
+		C9D55F822C9095C20046135C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D55F812C9095C20046135C /* User.swift */; };
+		C9D55F842C90978A0046135C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D55F832C90978A0046135C /* Extensions.swift */; };
+		C9D55F862C909CD60046135C /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D55F852C909CD60046135C /* MainViewViewModel.swift */; };
 		C9E7390F2C381E9C007AEC92 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7390E2C381E9C007AEC92 /* TargetView.swift */; };
 		C9EE27632C35625F0077B30A /* WaterCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE27622C35625F0077B30A /* WaterCup.swift */; };
 		C9EE27662C35638F0077B30A /* WaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE27652C35638F0077B30A /* WaterViewModel.swift */; };
@@ -24,20 +33,27 @@
 		C9EE276C2C36BC090077B30A /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE276B2C36BC090077B30A /* GoalView.swift */; };
 		C9EE276F2C36D3030077B30A /* GoalWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE276E2C36D3030077B30A /* GoalWaterView.swift */; };
 		C9EE27722C371BEB0077B30A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE27712C371BEB0077B30A /* HomeView.swift */; };
+		C9EEC0C32C8F0D99004F664A /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEC0C22C8F0D99004F664A /* LoginViewViewModel.swift */; };
+		C9EEC0D62C8F22C7004F664A /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEC0D52C8F22C7004F664A /* RegisterViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C90765472C511BAF00DCB324 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		C92215772C4FD63A00EFB489 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		C95565962C2EFCCB00CCCCBA /* Watermoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watermoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C924C1362CA57CE500F861A9 /* Watermoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watermoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C924C14D2CA584DE00F861A9 /* TargetViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewViewModel.swift; sourceTree = "<group>"; };
+		C924C14F2CA5850E00F861A9 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		C95565992C2EFCCB00CCCCBA /* WatermoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermoonApp.swift; sourceTree = "<group>"; };
 		C955659D2C2EFCCD00CCCCBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C95565A02C2EFCCD00CCCCBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C95565B12C2F052F00CCCCBA /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		C95565B32C2F05CC00CCCCBA /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 		C95565B52C2F07C800CCCCBA /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		C95565B72C3024FB00CCCCBA /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C99DD2BE2C8F02CF00D44A79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9CD603D2C4D9B830015AF97 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C9D55F812C9095C20046135C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C9D55F832C90978A0046135C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9D55F852C909CD60046135C /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		C9E7390E2C381E9C007AEC92 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 		C9EE27622C35625F0077B30A /* WaterCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCup.swift; sourceTree = "<group>"; };
 		C9EE27652C35638F0077B30A /* WaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewModel.swift; sourceTree = "<group>"; };
@@ -45,6 +61,8 @@
 		C9EE276B2C36BC090077B30A /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		C9EE276E2C36D3030077B30A /* GoalWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalWaterView.swift; sourceTree = "<group>"; };
 		C9EE27712C371BEB0077B30A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C9EEC0C22C8F0D99004F664A /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		C9EEC0D52C8F22C7004F664A /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C924C1482CA5800500F861A9 /* FirebaseDatabaseSwift in Frameworks */,
+				C924C1462CA5800500F861A9 /* FirebaseAuth in Frameworks */,
+				C924C14C2CA580A700F861A9 /* FirebaseAnalytics in Frameworks */,
+				C924C14A2CA5800500F861A9 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,17 +99,11 @@
 		C955658D2C2EFCCB00CCCCBA = {
 			isa = PBXGroup;
 			children = (
+				C95565AB2C2F02E500CCCCBA /* Resources */,
 				C95565982C2EFCCB00CCCCBA /* Watermoon */,
-				C95565972C2EFCCB00CCCCBA /* Products */,
+				C9F0B2F72CA578EA00D3AC8D /* Frameworks */,
+				C924C1362CA57CE500F861A9 /* Watermoon.app */,
 			);
-			sourceTree = "<group>";
-		};
-		C95565972C2EFCCB00CCCCBA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C95565962C2EFCCB00CCCCBA /* Watermoon.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C95565982C2EFCCB00CCCCBA /* Watermoon */ = {
@@ -98,18 +114,8 @@
 				C9EE27642C3563710077B30A /* ViewModels */,
 				C9EE27612C35622D0077B30A /* Models */,
 				C95565A92C2F02CA00CCCCBA /* Views */,
-				C95565AB2C2F02E500CCCCBA /* Resources */,
-				C955659F2C2EFCCD00CCCCBA /* Preview Content */,
 			);
 			path = Watermoon;
-			sourceTree = "<group>";
-		};
-		C955659F2C2EFCCD00CCCCBA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C95565A02C2EFCCD00CCCCBA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C95565A92C2F02CA00CCCCBA /* Views */ = {
@@ -132,8 +138,10 @@
 		C95565AB2C2F02E500CCCCBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C99DD2BE2C8F02CF00D44A79 /* GoogleService-Info.plist */,
 				C95565992C2EFCCB00CCCCBA /* WatermoonApp.swift */,
 				C955659D2C2EFCCD00CCCCBA /* Assets.xcassets */,
+				C9D55F832C90978A0046135C /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EE27622C35625F0077B30A /* WaterCup.swift */,
+				C9D55F812C9095C20046135C /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +207,11 @@
 			isa = PBXGroup;
 			children = (
 				C9EE27652C35638F0077B30A /* WaterViewModel.swift */,
+				C9EEC0C22C8F0D99004F664A /* LoginViewViewModel.swift */,
+				C9EEC0D52C8F22C7004F664A /* RegisterViewViewModel.swift */,
+				C9D55F852C909CD60046135C /* MainViewViewModel.swift */,
+				C924C14D2CA584DE00F861A9 /* TargetViewViewModel.swift */,
+				C924C14F2CA5850E00F861A9 /* ProfileViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -234,6 +248,13 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		C9F0B2F72CA578EA00D3AC8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,8 +271,14 @@
 			dependencies = (
 			);
 			name = Watermoon;
+			packageProductDependencies = (
+				C924C1452CA5800500F861A9 /* FirebaseAuth */,
+				C924C1472CA5800500F861A9 /* FirebaseDatabaseSwift */,
+				C924C1492CA5800500F861A9 /* FirebaseFirestore */,
+				C924C14B2CA580A700F861A9 /* FirebaseAnalytics */,
+			);
 			productName = Watermoon;
-			productReference = C95565962C2EFCCB00CCCCBA /* Watermoon.app */;
+			productReference = C924C1362CA57CE500F861A9 /* Watermoon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -276,9 +303,13 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = C955658D2C2EFCCB00CCCCBA;
-			productRefGroup = C95565972C2EFCCB00CCCCBA /* Products */;
+			packageReferences = (
+				C924C1442CA5800500F861A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C955658D2C2EFCCB00CCCCBA;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -292,8 +323,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95565A12C2EFCCD00CCCCBA /* Preview Assets.xcassets in Resources */,
 				C955659E2C2EFCCD00CCCCBA /* Assets.xcassets in Resources */,
+				C99DD2BF2C8F02CF00D44A79 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,18 +337,25 @@
 			files = (
 				C95565B42C2F05CC00CCCCBA /* WaterView.swift in Sources */,
 				C9CD603E2C4D9B830015AF97 /* MainView.swift in Sources */,
+				C9EEC0D62C8F22C7004F664A /* RegisterViewViewModel.swift in Sources */,
 				C95565B62C2F07C800CCCCBA /* StatsView.swift in Sources */,
+				C9EEC0C32C8F0D99004F664A /* LoginViewViewModel.swift in Sources */,
 				C95565B22C2F052F00CCCCBA /* TabbarView.swift in Sources */,
 				C9EE276F2C36D3030077B30A /* GoalWaterView.swift in Sources */,
+				C924C1502CA5850E00F861A9 /* ProfileViewViewModel.swift in Sources */,
+				C9D55F842C90978A0046135C /* Extensions.swift in Sources */,
 				C9EE27632C35625F0077B30A /* WaterCup.swift in Sources */,
+				C924C14E2CA584DE00F861A9 /* TargetViewViewModel.swift in Sources */,
 				C90765482C511BAF00DCB324 /* RegisterView.swift in Sources */,
 				C9E7390F2C381E9C007AEC92 /* TargetView.swift in Sources */,
 				C9EE27722C371BEB0077B30A /* HomeView.swift in Sources */,
 				C92215782C4FD63A00EFB489 /* LoginView.swift in Sources */,
 				C95565B82C3024FB00CCCCBA /* SettingView.swift in Sources */,
 				C955659A2C2EFCCB00CCCCBA /* WatermoonApp.swift in Sources */,
+				C9D55F822C9095C20046135C /* User.swift in Sources */,
 				C9EE27662C35638F0077B30A /* WaterViewModel.swift in Sources */,
 				C9EE276C2C36BC090077B30A /* GoalView.swift in Sources */,
+				C9D55F862C909CD60046135C /* MainViewViewModel.swift in Sources */,
 				C9EE27692C35694B0077B30A /* WaterCupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -434,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -449,15 +487,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Watermoon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watermoon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,15 +517,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Watermoon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watermoon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,6 +564,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C924C1442CA5800500F861A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C924C1452CA5800500F861A9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C924C1442CA5800500F861A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C924C1472CA5800500F861A9 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C924C1442CA5800500F861A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		C924C1492CA5800500F861A9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C924C1442CA5800500F861A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C924C14B2CA580A700F861A9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C924C1442CA5800500F861A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C955658E2C2EFCCB00CCCCBA /* Project object */;
 }

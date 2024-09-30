@@ -89,16 +89,7 @@ struct WaterView: View {
                                             .padding(20)
                                           
                                     }
-                                    .overlay(alignment: .bottom){
-                                        Button(action: {
-                                            
-                                            
-                                        }, label: {
-                                            
-                                            Text("Arttır")
-                                        })
-                                       
-                                    }
+                               
                              
                             }
                             .frame(width: size.width, height: size.height, alignment: .center)

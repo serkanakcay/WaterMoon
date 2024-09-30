@@ -9,10 +9,10 @@ import SwiftUI
 
 struct TabbarView: View {
     @State var selecetedItem: Int = 0
+    @State var viewModel = MainViewViewModel()
     
     var body: some View {
         
-            
             
             TabView(selection: $selecetedItem){
                 WaterView()

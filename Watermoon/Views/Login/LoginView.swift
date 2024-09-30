@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var Email = ""
-    @State var Password = ""
+    @State private var viewModel = LoginViewViewModel()
+    
     var body: some View {
-        
-        NavigationStack{
-            VStack{
-                VStack(alignment: .leading){
+        NavigationStack {
+            VStack {
+                VStack(alignment: .leading) {
                     Text("Giriş Yap")
                         .fontDesign(.rounded)
                         .font(.largeTitle)
@@ -25,20 +24,25 @@ struct LoginView: View {
                         .fontDesign(.rounded)
                         .fontWeight(.light)
                     
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
+                    
                     Text("Email")
                         .font(.subheadline)
                         .fontDesign(.rounded)
                         .fontWeight(.light)
                         .padding(.top)
-                    TextField("Email Adresiniz", text:$Email)
+                    
+                    TextField("Email Adresiniz", text: $viewModel.email)
                         .padding(.leading)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 55)
+                        .frame(maxWidth: .infinity) // max genişlik sağlanıyor
+                        .frame(height: 55) // Sabit height kullanılıyor
                         .background(
                             RoundedRectangle(cornerRadius: 12)
                                 .stroke(Color.gray.opacity(0.1), lineWidth: 2)
                         )
-                    
                         .overlay(alignment: .trailing) {
                             Image(systemName: "at")
                                 .opacity(0.2)
@@ -50,10 +54,11 @@ struct LoginView: View {
                         .fontDesign(.rounded)
                         .fontWeight(.light)
                         .padding(.top)
-                    SecureField("Şifreniz", text:$Email)
+                    
+                    SecureField("Şifreniz", text: $viewModel.password)
                         .padding(.leading)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 55)
+                        .frame(maxWidth: .infinity) // max genişlik sağlanıyor
+                        .frame(height: 55) // Sabit height kullanılıyor
                         .background(
                             RoundedRectangle(cornerRadius: 12)
                                 .stroke(Color.gray.opacity(0.1), lineWidth: 2)
@@ -64,31 +69,32 @@ struct LoginView: View {
                                 .padding(.trailing)
                         }
                     
-                    HStack{
-                        
+                    HStack {
                         Spacer()
                         Text("Şifrenmi unuttum?")
                             .font(.subheadline)
                             .fontDesign(.rounded)
                             .fontWeight(.bold)
-                            .foregroundStyle(.black)
-                        
+                            .foregroundColor(.black)
                     }
-                    .foregroundColor(.gray.opacity(1))
-                    
-                    
+                    .foregroundColor(.gray)
                 }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                
+                Button(action: {
+                    viewModel.login()
+                    print("logine tıklandı")
+                }, label: {
                     Text("Giriş Yap")
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundColor(.white)
                 })
-                .frame(maxWidth: .infinity, maxHeight: 55)
-                .background(Color.water, in:.rect(cornerRadius: 8))
-                
+                .frame(maxWidth: .infinity) // max genişlik sağlanıyor
+                .frame(height: 55) // Sabit height kullanılıyor
+                .background(Color.main, in: RoundedRectangle(cornerRadius: 8))
             }
             .padding()
-            VStack{
+            
+            VStack {
                 Divider()
                     .opacity(0.2)
                     .overlay {
@@ -96,18 +102,21 @@ struct LoginView: View {
                     }
             }
             .padding()
-            HStack{
-                
-                
+            
+            HStack {
                 RoundedRectangle(cornerRadius: 5)
                     .fill(Color.white)
-                    .stroke(Color.gray.opacity(0.1), lineWidth: 1)
-                    .frame(width: .infinity, height: 60)
-                    .padding()
-                
+                    .frame(maxWidth: .infinity) // max genişlik sağlanıyor
+                    .frame(height: 60) // Sabit height kullanılıyor
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.gray.opacity(0.1), lineWidth: 1)
+                    )
                     .overlay {
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                            HStack{
+                        Button(action: {
+                            // Google ile giriş yapma aksiyonu
+                        }, label: {
+                            HStack {
                                 Image("google")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -115,27 +124,24 @@ struct LoginView: View {
                                 
                                 Text("Google ile Giriş Yap")
                                     .font(.headline)
-                                    .foregroundStyle(.black)
+                                    .foregroundColor(.black)
                             }
                         })
                         .padding(10)
-                        
-                        
-                        
-                        
                     }
-                
             }
-            HStack{
+            .padding()
+            
+            HStack {
                 Text("Üyeliğin Yok mu? ")
                     .font(.subheadline)
-                    .foregroundStyle(.gray)
+                    .foregroundColor(.gray)
+                
                 NavigationLink {
                     RegisterView()
                 } label: {
                     Text("Kayıt Ol")
                 }
-                
             }
         }
     }

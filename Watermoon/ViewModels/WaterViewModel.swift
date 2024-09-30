@@ -8,7 +8,8 @@
 import SwiftUI
 import Foundation
 
-@Observable class WaterViewModel{
+@Observable 
+class WaterViewModel{
     var cups: [WaterCup] = [
         .init(id: UUID().uuidString, LitreName: "100ml", Litre: 100, cupImage: "abc", progress: 0.1),
         .init(id: UUID().uuidString, LitreName: "250ml", Litre: 250, cupImage: "abc", progress: 0.2),
