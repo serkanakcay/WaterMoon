@@ -1,7 +1,7 @@
 ## Ekran Görüntüleri
 Login Screen |  Register Screen | Detail Screen | Home Screen | 
 --- | --- | --- | --- | 
-![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/77sej3a.png) | ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/hn3zqu6.png) | ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/mfnp48n.png) | ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/3xjpnv6.png) | 
+![Uygulama Ekran Görüntüsü](https://github.com/serkanakcay/assets/blob/main/77sej3a.jpeg) | ![Uygulama Ekran Görüntüsü](https://github.com/serkanakcay/assets/blob/main/hn3zqu6.jpeg) | ![Uygulama Ekran Görüntüsü](https://github.com/serkanakcay/assets/blob/main/mfnp48n.jpeg) | ![Uygulama Ekran Görüntüsü](https://github.com/serkanakcay/assets/blob/main/3xjpnv6.jpeg) | 
 
 # Günlük Su Takip Uygulaması
 
